@@ -12,6 +12,9 @@
 !.xprofile
 !.bash_profile
 
+#.config
+!.config/
+
 # zed
 !.config/zed/
 

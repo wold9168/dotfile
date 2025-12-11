@@ -1,0 +1,13 @@
+*
+
+!.gitignore
+
+# zsh
+!.zshrc
+!.zprofile
+
+# bash
+!.bashrc
+!.profile
+!.xprofile
+!.bash_profile

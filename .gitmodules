@@ -4,3 +4,6 @@
 [submodule ".config/kitty"]
 	path = .config/kitty
 	url = git@github.com:wold9168/kitty-config.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git

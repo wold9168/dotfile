@@ -1,10 +1,12 @@
 *
 
 !.gitignore
+!dotfile-init.sh
 
 # zsh
 !.zshrc
 !.zprofile
+!.oh-my-zsh/
 
 # bash
 !.bashrc

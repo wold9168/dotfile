@@ -11,3 +11,9 @@
 !.profile
 !.xprofile
 !.bash_profile
+
+# zed
+!.config/zed/
+
+# kitty
+!.config/kitty/

@@ -115,6 +115,7 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions
     kubectl
     kompose
     minikube
+    podman
 )
 
 source $ZSH/oh-my-zsh.sh

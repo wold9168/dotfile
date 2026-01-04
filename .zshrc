@@ -153,22 +153,24 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Toolchain hook
 #eval "$(rbenv init - zsh)"
 
+## direnv
 eval "$(direnv hook zsh)"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
-# navi
+## navi
 eval "$(navi widget zsh)"
 
 export EDITOR=/usr/bin/vim
 
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
 
-# go bin
+## go bin
 export PATH="$(go env GOPATH)/bin:$PATH"
 
-# pnpm
+## pnpm
 export PNPM_HOME="/home/wold9168/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
@@ -188,9 +190,15 @@ export PATH="$GOENV_ROOT/bin:$PATH"
 export GOENV_PATH_ORDER=front
 eval "$(goenv init -)"
 
-# k8s
+## k8s
 # source <(kubectl completion zsh)
 source <(kubeadm completion zsh)
 
-# kompose
+## kompose
 # source <(kompose completion zsh)
+
+## tailscale
+source <(tailscale completion zsh)
+
+# alias
+alias fd='fd -u'

@@ -202,3 +202,4 @@ source <(tailscale completion zsh)
 
 # alias
 alias fd='fd -u'
+alias rg='rg -u'

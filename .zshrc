@@ -200,6 +200,11 @@ source <(kubeadm completion zsh)
 ## tailscale
 source <(tailscale completion zsh)
 
+## pinentry
+if [ "$SSH_CLIENT" ]; then
+   export PINENTRY_USER_DATA=USE_CURSES
+fi
+
 # alias
 alias fd='fd -u'
 alias rg='rg -u'

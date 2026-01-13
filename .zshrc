@@ -154,6 +154,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Toolchain hook
+
 #eval "$(rbenv init - zsh)"
 
 ## direnv
@@ -176,15 +177,18 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+## pnpm end
 
-# gitea/tea
+## gitea/tea
 source <(tea completion zsh)
 
-# crictl
+## berg
+source <(berg completion zsh)
+
+## crictl
 source <(crictl completion zsh)
 
-# goenv
+## goenv
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 export GOENV_PATH_ORDER=front

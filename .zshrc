@@ -207,8 +207,11 @@ source <(tailscale completion zsh)
 ## pinentry
 if [ "$SSH_CLIENT" ]; then
    export PINENTRY_USER_DATA=USE_CURSES
+   export GPG_TTY=$(tty)
 fi
 
 # alias
 alias fd='fd -u'
 alias rg='rg -u'
+
+test -f /home/xlings/.xlings_data/xlings-profile.sh && source /home/xlings/.xlings_data/xlings-profile.sh

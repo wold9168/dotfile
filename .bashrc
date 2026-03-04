@@ -42,3 +42,5 @@ unset __conda_setup
 
 
 [ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
+
+test -f /home/xlings/.xlings_data/xlings-profile.sh && source /home/xlings/.xlings_data/xlings-profile.sh

@@ -210,6 +210,9 @@ if [ "$SSH_CLIENT" ]; then
    export GPG_TTY=$(tty)
 fi
 
+## texdoc
+compctl -k "(($(awk '/^name[^.]*$/ {print $2}' $(kpsewhich -var-value TEXMFROOT)/tlpkg/texlive.tlpdb)))" texdoc
+
 # alias
 alias fd='fd -u'
 alias rg='rg -u'

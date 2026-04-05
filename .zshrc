@@ -218,3 +218,12 @@ alias fd='fd -u'
 alias rg='rg -u'
 
 test -f /home/xlings/.xlings_data/xlings-profile.sh && source /home/xlings/.xlings_data/xlings-profile.sh
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/wold9168/.opam/opam-init/init.zsh' ]] || source '/home/wold9168/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration

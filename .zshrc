@@ -182,9 +182,6 @@ esac
 ## gitea/tea
 source <(tea completion zsh)
 
-## berg
-source <(berg completion zsh)
-
 ## crictl
 source <(crictl completion zsh)
 

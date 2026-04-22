@@ -217,9 +217,6 @@ compctl -k "(($(awk '/^name[^.]*$/ {print $2}' $(kpsewhich -var-value TEXMFROOT)
 alias fd='fd -u'
 alias rg='rg -u'
 
-test -f /home/xlings/.xlings_data/xlings-profile.sh && source /home/xlings/.xlings_data/xlings-profile.sh
-
-
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
 #   - the correct directories to the PATH

@@ -185,6 +185,9 @@ esac
 ## gitea/tea
 source <(tea completion zsh)
 
+## fj
+source <(fj completion zsh)
+
 ## crictl
 source <(crictl completion zsh)
 

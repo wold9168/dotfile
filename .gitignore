@@ -15,6 +15,9 @@
 !.xprofile
 !.bash_profile
 
+# usql
+!.usqlrc
+
 #.config
 !.config/
 

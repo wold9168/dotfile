@@ -1,9 +1,11 @@
 [submodule ".config/zed"]
 	path = .config/zed
 	url = https://github.com/wold9168/zed-config.git
+	branch = master
 [submodule ".config/kitty"]
 	path = .config/kitty
 	url = https://github.com/wold9168/kitty-config.git
+	branch = master
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git

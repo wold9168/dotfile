@@ -8,6 +8,7 @@
 !.zprofile
 !.oh-my-zsh/
 !.p10k.zsh
+!powerlevel10k/
 
 # bash
 !.bashrc

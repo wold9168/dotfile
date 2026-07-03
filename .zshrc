@@ -153,8 +153,11 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Secrets
+# Env Vars
+## Secrets
 [[ -f .secret ]] && source ./.secret
+## XMODIFIERS (Fcitx5 in KDE6 Wayland)
+export XMODIFIERS=@im=fcitx
 
 # Toolchain hook
 
@@ -187,6 +190,9 @@ source <(tea completion zsh)
 
 ## fj
 source <(fj completion zsh)
+alias fjcb='fj -H codeberg.org'
+alias fjgh='fj -H github.com'
+alias fjgl='fj -H gitlab.com'
 
 ## crictl
 source <(crictl completion zsh)
@@ -216,10 +222,6 @@ fi
 ## texdoc
 compctl -k "(($(awk '/^name[^.]*$/ {print $2}' $(kpsewhich -var-value TEXMFROOT)/tlpkg/texlive.tlpdb)))" texdoc
 
-# alias
-alias fd='fd -u'
-alias rg='rg -u'
-
 # BEGIN opam configuration
 # This is useful if you're using opam as it adds:
 #   - the correct directories to the PATH
@@ -227,3 +229,8 @@ alias rg='rg -u'
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/wold9168/.opam/opam-init/init.zsh' ]] || source '/home/wold9168/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
 # END opam configuration
+
+# alias
+alias fd='fd -u'
+alias rg='rg -u'
+alias gh='GITHUB_TOKEN="" gh'

@@ -5,3 +5,4 @@ export PATH="/usr/local/cuda/bin:$PATH"
 export NVD_BACKEND=direct
 export MOZ_DISABLE_RDD_SANDBOX=1
 export NIX_REMOTE=daemon
+export XMODIFIERS=@im=fcitx

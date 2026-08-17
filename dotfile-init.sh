@@ -1,5 +1,9 @@
 #!/usr/bin/zsh
 
+USER=wold9168
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd);
+[[ "$SCRIPT_DIR" == "/home/${USER}" ]] || cp -a "$SCRIPT_DIR/." "/home/${USER}/"
+
 git submodule update --init --remote
 source .zshrc
 

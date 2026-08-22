@@ -194,21 +194,11 @@ alias fjcb='fj -H codeberg.org'
 alias fjgh='fj -H github.com'
 alias fjgl='fj -H gitlab.com'
 
-## crictl
-source <(crictl completion zsh)
-
 ## goenv
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 export GOENV_PATH_ORDER=front
 eval "$(goenv init -)"
-
-## k8s
-# source <(kubectl completion zsh)
-source <(kubeadm completion zsh)
-
-## kompose
-# source <(kompose completion zsh)
 
 ## tailscale
 source <(tailscale completion zsh)

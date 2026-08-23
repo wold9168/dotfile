@@ -2,6 +2,7 @@
 
 !.gitignore
 !dotfile-init.sh
+!roll-go-toolchain.sh
 
 # zsh
 !.zshrc

@@ -11,5 +11,5 @@ RESET="\033[0m"
 
 for pkg in "${packages[@]}"; do
     echo -e "${BOLD_WHITE_ON_BLUE}${pkg}${RESET}"
-    go install "${pkg}"
+    go install ${pkg}
 done

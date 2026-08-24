@@ -159,6 +159,9 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 ## XMODIFIERS (Fcitx5 in KDE6 Wayland)
 export XMODIFIERS=@im=fcitx
 
+## CUDA Env
+export NVCC_CCBIN='g++-15'
+
 # Toolchain hook
 
 #eval "$(rbenv init - zsh)"

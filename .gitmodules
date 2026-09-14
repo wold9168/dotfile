@@ -6,6 +6,10 @@
 	path = .config/kitty
 	url = https://github.com/wold9168/kitty-config.git
 	branch = master
+[submodule ".config/nvim"]
+    path = .config/nvim
+    url = https://github.com/wold9168/nvim-config.git
+    branch = master
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git

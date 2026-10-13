@@ -208,7 +208,7 @@ source <(tailscale completion zsh)
 
 ## pinentry
 if [ "$SSH_CONNECTION" ]; then
-   export PINENTRY_USER_DATA="USE_CURSES=1"
+   export PINENTRY_USER_DATA="USE_CURSES"
    export GPG_TTY=$(tty)
 fi
 

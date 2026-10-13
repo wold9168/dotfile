@@ -208,7 +208,7 @@ source <(tailscale completion zsh)
 
 ## pinentry
 if [ "$SSH_CLIENT" ]; then
-   export PINENTRY_USER_DATA=USE_CURSES
+   export PINENTRY_USER_DATA="USE_CURSES=1"
    export GPG_TTY=$(tty)
 fi
 
@@ -227,3 +227,5 @@ compctl -k "(($(awk '/^name[^.]*$/ {print $2}' $(kpsewhich -var-value TEXMFROOT)
 alias fd='fd -u'
 alias rg='rg -u'
 alias gh='GITHUB_TOKEN="" gh'
+alias pio='bwrap --ro-bind / / --dev /dev --proc /proc --bind "${HOME}/.pi" "${HOME}/.pi" --bind "$(pwd)" "$(pwd)" --chdir "$(pwd)" --unshare-all --die-with-parent pi'
+alias ":q"="exit"

@@ -175,7 +175,6 @@ eval "$(navi widget zsh)"
 
 export EDITOR=/usr/bin/vim
 
-[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
 
 ## go bin
 export PATH="$(go env GOPATH)/bin:$PATH"
@@ -229,3 +228,7 @@ alias rg='rg -u'
 alias gh='GITHUB_TOKEN="" gh'
 alias pio='bwrap --ro-bind / / --dev /dev --proc /proc --bind "${HOME}/.pi" "${HOME}/.pi" --bind "$(pwd)" "$(pwd)" --chdir "$(pwd)" --unshare-all --die-with-parent pi'
 alias ":q"="exit"
+alias dst='dsh-tui'
+alias wl-select="wl-paste | nvim +'setlocal buftype=nofile'"
+
+case ":$PATH:" in *":$HOME/.local/bin:"*) ;; *) export PATH="$HOME/.local/bin:$PATH" ;; esac
